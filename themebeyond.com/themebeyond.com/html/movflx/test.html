@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Input Example</title>
+</head>
+<body>
+    <input type="text" id="textInput">
+    <button onclick="printText()">Print Text</button>
+    <div id="player-container">
+        <iframe id="player" allowfullscreen="true" allow="autoplay" frameborder="0"></iframe>
+    </div>
+
+    <script>
+        function printText() {
+            const movieId = document.getElementById("textInput").value;
+            console.log(movieId);
+            const playerContainer = document.getElementById("player");
+            playerContainer.src = `https://embed.smashystream.com/playere.php?tmdb=+${movieId}&dplayer=S`;
+        }
+    </script>
+</body>
+</html>
+
+
+
