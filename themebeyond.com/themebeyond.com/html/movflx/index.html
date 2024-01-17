@@ -54,7 +54,7 @@
                                 <nav class="menu-nav show">
                                     <div class="logo">
                                         <a href="index.html">
-                                            <img src="img/logo/logo.png" alt="Logo" width=150px height=150px>
+                                            <img class="logo" src="img/logo/logo.png" alt="Logo" width=258.75px height=116.1px>
                                         </a>
                                     </div>
                                     <div class="navbar-wrap main-menu d-none d-lg-flex">
@@ -178,8 +178,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-8">
                             <div class="banner-content">
-                                <h6 class="sub-title wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.8s">jenalck</h6>
-                                <h2 class="title wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1.8s">Unlimited <span>Movies</span>, TVs Shows, & More.</h2>
+                                <h2 class="title wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1.8s">The Black<span>list</span></h2>
                                 <div class="banner-meta wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.8s">
                                     <ul>
                                         <li class="quality">
@@ -187,16 +186,47 @@
                                             <span>hd</span>
                                         </li>
                                         <li class="category">
-                                            <a href="#">Romance,</a>
-                                            <a href="#">Drama</a>
+                                            <a href="#">Action,</a>
+                                            <a href="#">Trailer</a>
                                         </li>
                                         <li class="release-time">
-                                            <span><i class="far fa-calendar-alt"></i> 2024</span>
-                                            <span><i class="far fa-clock"></i> 128 min</span>
+                                            <span><i class="far fa-calendar-alt"></i>2013</span>
+                                            <span><i class="far fa-clock"></i>10 seasons</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" class="banner-btn btn popup-video wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.8s"><i class="fas fa-play"></i> Watch Now</a>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<a href="#" id="showVideo" class="banner-btn btn popup-video wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.8s"><i class="fas fa-play"></i> Watch Now</a>
+
+
+<div id="videoModal" class="modal" style="display: none;">
+  <span class="close" id="closeModal">&times;</span>
+  <iframe id="videoIframe" src="https://www.2embed.cc/embedtvfull/46952" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $("#showVideo").click(function(event){
+      event.preventDefault(); // Prevent the default behavior
+
+      $("#videoModal").show();
+    });
+
+    $("#closeModal").click(function(){
+      $("#videoModal").hide();
+    });
+  });
+</script>
+
+
+                                    
+                                
                             </div>
                         </div>
                     </div>
@@ -583,7 +613,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-3">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="" width=100px height=100px></a>
+                                    <a href="index.html"><img src="img/logo/logo.png" alt="" width=258.75px height=116.1px></a>
                                 </div>
                             </div>
                             <div class="col-lg-9">
